@@ -15,4 +15,4 @@ docker-compose down
 ```
 
 Note:
-To run the eyes applitools scenario, replace your `YOUR_API_KEY` on `applitools.config.js` file.
+To run the eyes applitools scenario, replace `apiKey` on `applitools.config.js` file.

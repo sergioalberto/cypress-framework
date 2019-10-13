@@ -1,4 +1,5 @@
 {
   "projectId": "71h6ey",
-  "watchForFileChanges": false
+  "watchForFileChanges": false,
+  "eyesTimeout": 320000
 }
