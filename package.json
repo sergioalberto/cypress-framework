@@ -1,0 +1,20 @@
+{
+  "name": "cypress-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "cypress": "cypress open",
+    "record": "cypress run --record --key d6970505-fbde-44ab-8e19-1a74ddb5d582"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@applitools/eyes-cypress": "^3.8.7"
+  },
+  "devDependencies": {
+    "cypress": "^3.4.1"
+  }
+}
