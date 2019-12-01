@@ -6,7 +6,11 @@
   "scripts": {
     "test": "cypress run",
     "cypress": "cypress open",
-    "record": "cypress run --record --key YOUR_KEY"
+    "record": "cypress run --record --key YOUR_KEY",
+    "backstop-init": "backstop init",
+    "backstop-reference": "rm -rf backstop_data/bitmaps_test && backstop reference",
+    "backstop-test": "backstop test",
+    "backstop-approve": "backstop approve"
   },
   "keywords": [],
   "author": "",

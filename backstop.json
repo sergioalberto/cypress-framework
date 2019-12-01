@@ -1,0 +1,104 @@
+{
+  "id": "Demo BackstopJS",
+  "viewports": [
+    {
+      "label": "phone",
+      "width": 320,
+      "height": 480
+    },
+    {
+      "label": "tablet_h",
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "name": "tablet_v",
+      "width": 568,
+      "height": 1024
+    }
+  ],
+  "onBeforeScript": "puppet/onBefore.js",
+  "onReadyScript": "puppet/onReady.js",
+  "scenarios": [
+    {
+      "label": "BookStore Homepage",
+      "cookiePath": "",
+      "url": "http://35.239.55.137/store",
+      "referenceUrl": "http://130.211.227.120/store",
+      "readyEvent": "",
+      "readySelector": "#demo-page",
+      "delay": 10,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Input Search",
+      "cookiePath": "",
+      "url": "http://35.239.55.137/store",
+      "referenceUrl": "http://130.211.227.120/store",
+      "readyEvent": "",
+      "readySelector": "#searchBar",
+      "delay": 1000,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": ["#searchBar"],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Looking for a book",
+      "onReadyScript": "searchBook.js",
+      "cookiePath": "",
+      "url": "http://35.239.55.137/store",
+      "referenceUrl": "http://130.211.227.120/store",
+      "readyEvent": "",
+      "readySelector": "#productList .ui-li-has-thumb:not(.ui-screen-hidden)",
+      "delay": 5000,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "keyPressSelectors": [
+        {
+          "selector": "#searchBar.ui-focus",
+          "keyPress": "java"
+        }
+      ],
+      "clickSelector": "",
+      "postInteractionWait": 5,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "report": ["browser", "CI"],
+  "engine": "chrome",
+  "engineOptions": {
+    "args": ["--no-sandbox"]
+  },
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false
+}
