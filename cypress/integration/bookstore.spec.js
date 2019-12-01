@@ -20,7 +20,7 @@ describe('search books', () => {
     homePage.verifyBookPrice('$49.07')
   })
 
-  describe('visual validation', () => {
+  describe.skip('visual validation', () => {
 
     beforeEach(() => cy.eyesOpen({appName: 'BookStore', batchName: "BookStore Testing!"}))
     afterEach(() => cy.eyesClose())

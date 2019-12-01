@@ -1,5 +1,6 @@
 # USAGE
 # python image_diff.py --first images/store1.png --second images/store2.png
+# Source: https://www.pyimagesearch.com/2017/06/19/image-difference-with-opencv-and-python/
 
 # import the necessary packages
 from skimage.measure import compare_ssim
