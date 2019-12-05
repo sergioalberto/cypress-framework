@@ -35,7 +35,7 @@ describe('search books', () => {
     it('should match the price color', function () {
       homePage.searchBook('java')
       homePage.verifyProductList('The Cucumber for Java Book')
-      homePage.verifyColorPrice()
+      // homePage.verifyColorPrice()
       cy.eyesCheckWindow({
         sizeMode: 'selector', //mode
         selector: homePage.bookPrice //CSS Selector

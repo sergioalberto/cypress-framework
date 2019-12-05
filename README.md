@@ -37,4 +37,5 @@ export NODE_TLS_REJECT_UNAUTHORIZED=0 && npm install
 npm run backstop-reference
 npm run backstop-test
 npm run backstop-approve
+npm run backstop-report
 ```

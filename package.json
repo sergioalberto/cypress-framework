@@ -10,7 +10,8 @@
     "backstop-init": "backstop init",
     "backstop-reference": "rm -rf backstop_data/bitmaps_test && backstop reference",
     "backstop-test": "backstop test",
-    "backstop-approve": "backstop approve"
+    "backstop-approve": "backstop approve",
+    "backstop-report": "backstop openReport"
   },
   "keywords": [],
   "author": "",
